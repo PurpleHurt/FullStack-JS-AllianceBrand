@@ -1,15 +1,15 @@
-var customerName = "Alliance  ";
+var customerName = "Alliance";
 
 // <h1 id="tm-header" class="tm-brand text-uppercase"></h1> <!--todo: Add Customer Name-->
 function addCustomerName() {
 
-    let title = document.getElementById('title')
+    let title = document.querySelector('#title')
     title.textContent = customerName;
 
-    let header = document.getElementById('tm-header')
+    let header = document.querySelector('#tm-header')
     header.textContent = customerName;
 
-    let introHeader = document.getElementById('introheader')
+    let introHeader = document.querySelector('#introheader')
     introHeader.textContent = customerName;
 };
 
@@ -33,32 +33,30 @@ function toggleColors() {
 function hideElement() {
 
     var socialLink = document.querySelector('.tm-social-links');
-    socialLink.style.visibility = "none";
+    socialLink.style.visibility = "hidden";
 };
 
- function addText() {
+function addText() {
 
     //<p id="intropara1" class="tm-color-gray">  <!--todo: Add customer company introduction text-->
-    let intro = document.getElementById('intropara1')
+    let intro = document.querySelector('#intropara1')
     intro.textContent = "Alliance was founded in 1931 by Albert Daniels.";
 
     //<p id="intropara2" class="mb-0 tm-color-gray"> <!--todo: Add customer company introduction text-->
-    let intro2 = document.getElementById('intropara2')
+    let intro2 = document.querySelector('#intropara2')
     intro2.textContent = "The company is a leader in P.C. Manufacturing";
 
-     //<p id="aboutpara1" id="a" class="mb-5"> <!--todo: change about text-->
-    let aboutPara1 = document.getElementById('aboutpara1');
+    //<p id="aboutpara1" id="a" class="mb-5"> <!--todo: change about text-->
+    let aboutPara1 = document.querySelector('#aboutpara1');
     aboutPara1.textContent = "We deliver the best service this side of creation."
 
     //<p id="aboutpara2"> <!--todo: change about text-->
-    let aboutPara2 = document.getElementById('aboutpara2');
+    let aboutPara2 = document.querySelector('#aboutpara2');
     aboutPara2.textContent = "Our motto is satisfaction guaranteed.";
 
     // <p id="addresspara" class="mb-3"> <!--todo: Add customer company address/phone number text-->
-    let addresspara = document.getElementById('addresspara');
+    let addresspara = document.querySelector('#addresspara');
     addresspara.innerText = "800-555-5555"
 
-}; 
 
-
-
+};
